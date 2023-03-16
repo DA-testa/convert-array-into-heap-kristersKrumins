@@ -9,19 +9,19 @@ def build_heap(data):
 
     return swaps
 
-ded sort(data,i,swaps):
-x=len(data)
-right=2*i+2
-left=2*i+1
-lir=i 
-if left<x and data[left]<data[lir]:
-    lir=left
-if right<x and data[right]<data[lir]:
-    lir=right
-if i!=lir:
-    data[i],data[lir]=data[lir],data[i]
-    swaps.append((i,lir))
-    sort(data,lir,swaps)
+def sort(data,i,swaps):
+    x=len(data)
+    right=2*i+2
+    left=2*i+1
+    lir=i 
+    if left<x and data[left]<data[lir]:
+        lir=left
+    if right<x and data[right]<data[lir]:
+        lir=right
+    if i!=lir:
+        data[i],data[lir]=data[lir],data[i]
+        swaps.append((i,lir))
+        sort(data,lir,swaps)
 def main():
     
    t=input()
