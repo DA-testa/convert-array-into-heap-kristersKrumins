@@ -26,12 +26,15 @@ def main():
     
    test=input()
     if 'F' in test:
-        t_file=input()
-        with open("tests/"+t_file, 'r') as f:
-            x=int(f.readline())
-            data=list(map(int, f.readline().split()))
+        test_file = input()
+        with open("tests/"+test_file, 'r') as f:
+            n=int(f.readline())
+            
+            data = list(map(int, f.readline().split()))
+            
     else:
-       n = int(input())
+        
+        n = int(input())
         data = list(map(int, input().split()))
 
   
