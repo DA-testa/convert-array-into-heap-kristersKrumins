@@ -25,7 +25,7 @@ def sort(data,i,swaps):
 def main():
     
    t=input()
-    if 'F' in t:
+    if 'F' in test:
         t_file=input()
         with open("tests/"+t_file, 'r') as f:
             x=int(f.readline())
@@ -34,11 +34,10 @@ def main():
        n = int(input())
         data = list(map(int, input().split()))
 
-    # checks if lenght of data is the same as the said lenght
+  
     assert len(data) == n
 
-    # calls function to assess the data 
-    # and give back all swaps
+    
     swaps = build_heap(data)
 
     # TODO: output how many swaps were made, 
