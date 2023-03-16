@@ -24,8 +24,8 @@ def sort(data,i,swaps):
         sort(data,lir,swaps)
 def main():
     
-   test=input()
-    if 'F' in test:
+    test=input()
+    if  'F' in test:
         test_file = input()
         with open("tests/"+test_file, 'r') as f:
             n=int(f.readline())
@@ -43,11 +43,6 @@ def main():
     
     swaps = build_heap(data)
 
-    # TODO: output how many swaps were made, 
-    # this number should be less than 4n (less than 4*len(data))
-
-
-    # output all swaps
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
