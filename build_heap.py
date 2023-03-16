@@ -27,7 +27,7 @@ def main():
    t=input()
    if 'F' in t:
         t_file=input()
-        with open("tests/"+t_file, 'r') as f 
+        with open("tests/"+t_file, 'r') as f:
             x=int(f.readline())
             data=list(map(int, f.readline().split()))
     else:
