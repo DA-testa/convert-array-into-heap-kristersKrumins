@@ -25,7 +25,7 @@ def sort(data,i,swaps):
 def main():
     
    t=input()
-   if 'F' in t:
+    if 'F' in t:
         t_file=input()
         with open("tests/"+t_file, 'r') as f:
             x=int(f.readline())
